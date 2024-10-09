@@ -24,7 +24,7 @@ spring:
         - id: main
           uri: lb://web
           predicates:
-            - Path=/**, /user/**
+            - Path=/user/**
 eureka:
   client:
     service-url:
