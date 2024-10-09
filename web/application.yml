@@ -1,0 +1,5 @@
+#spring.rabbitmq.host=localhost
+#spring.rabbitmq.port=5672
+#spring.rabbitmq.username=rmuser
+#spring.rabbitmq.password=rmpassword
+greeting: "from git dev"
