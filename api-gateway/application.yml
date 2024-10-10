@@ -24,10 +24,15 @@ spring:
         - id: main
           uri: lb://web
           predicates:
-#            Не работает маппинг /user/* . Исправить
+            #            Не работает маппинг /user/* . Исправить
             - Path=/user/**
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
