@@ -25,7 +25,8 @@ spring:
           uri: lb://web
           predicates:
 #            Не работает маппинг /user/* . Исправить
-            - Path=/**
+            - Path=/user/**
+
 eureka:
   client:
     service-url:
